@@ -1,0 +1,73 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+/* Global Styles */
+:root{
+    --primary-color: #e5e5e5;
+    --secondary-color: #d05017;
+    --background-color: #0a0a0a;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alan Sans', sans-serif;
+    font-size: 24px;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    padding: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75rem 1.5rem;
+}
+
+.logo a{
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.logo a:hover, .logo a:focus{
+    color: var(--primary-color);
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.nav-links a{
+    text-decoration: none; /* Removes the underline from links */
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+
+.nav-links a:hover, .nav-links a:focus, .right-icons a:hover, .right-icons a:focus{
+    color: var(--secondary-color);
+}
